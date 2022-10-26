@@ -17,7 +17,7 @@ header p {
 .overlay-img {
   width: 100%;
   object-fit: cover;
-  border-radius: 1%;
+  border-radius: 2%;
   border: lightgoldenrodyellow solid 3px;
 }
 
