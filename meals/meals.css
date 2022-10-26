@@ -1,5 +1,48 @@
-.img-fluid {
-  max-width: 100%;
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay-img {
+  width: 100%;
   object-fit: cover;
+}
+
+.overlay-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  opacity: 0;
+  padding: 10%;
+}
+
+.overlay-card:hover {
+  opacity: 1;
+}
+
+.overlay-card > h3 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.overlay-card > p,
+.i {
+  font-size: 1.5em;
+}
+
+.vegan {
+  background-color: rgba(2, 129, 64, 0.8);
+  opacity: 4;
+  display: inline-block;
+  border-radius: 10%;
+}
+
+i {
+  margin-right: 0.2em;
 }

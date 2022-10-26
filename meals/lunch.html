@@ -5,13 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lunch</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="lunch/lunch.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/meals/meals.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
   <body>
     <!--Navbar-->
@@ -29,7 +25,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a href="/index.html" class="nav-link">Home</a>
             </li>
@@ -57,14 +53,73 @@
     </header>
     <!-- Main -->
     <section class="p5">
+
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="row .g-0">
+          <!-- Column 1 -->
+            <div class="col-md p-0 m-2">
+              <div class="row w-100 h-100 g-0 position-relative">
+                <div class="overlay-cont">
+                  <a href="./recipes/breakfast1.html">
+                <img src="../img/salad.jpg" class="overlay-img w-100 h-100" style="object-fit: cover;" alt="salad">
+                <div class="overlay-card">
+                  <h3 class="overlay-content">Mediterranean salad</h3>
+                  <p class="overlay-content"><i class="bi bi-alarm"></i> 20 minutes</p>
+                  <p class="overlay-content"><i class="bi bi-stars"></i> Beginner-friendly</p>
+                  <p class="text-white p-2 vegan">Vegan</p>
+                </div>
+                </a>
+              </div>
+              </div>  
+            </div>
+    <!-- Column 2 -->
+            <div class="col-md p-0 m-2">
+              <div class="row w-100 h-100 g-0 position-relative">
+                <div class="overlay-cont">
+                <img src="../img/spaghetti.jpg" class="overlay-img w-100 h-100" style="object-fit: cover;" alt="spaghetti">
+                <div class="overlay-card">
+                  <h3 class="overlay-content">Cherry tomato pasta</h3>
+                  <p class="overlay-content"><i class="bi bi-alarm"></i> 20 minutes</p>
+                  <p class="overlay-content"><i class="bi bi-stars"></i> Beginner-friendly</p>
+                  <p class="text-white p-2 vegan">Vegan</p>
+                </div>
+              </div>
+              </div>  
+            </div>
+      <!-- Column 3 -->
+            <div class="col-md p-0 m-2">
+                    <img src="../img/bowl.jpeg" class="img-fluid h-100" style="object-fit: cover;" alt="bowl">
+            </div>
+        </div>
+         <!-- Row 2 -->
+        <div class="row">
+          <!-- Column 1 -->
+            <div class="col-md p-0 m-2">
+                    <img src="../img/chicken.jpeg" class="img-fluid h-100" style="object-fit: cover;" alt="salad">
+            </div>
+            <!-- Column 2 -->
+            <div class="col-md p-0 m-2">
+                    <img src="../img/frittata.png" class="img-fluid h-100 img-resize" style="object-fit: cover;" alt="spaghetti">
+            </div>
+            <!-- Column 3 -->
+            <div class="col-md p-0 m-2">
+                    <img src="../img/avocado.jpeg" class="img-fluid h-100" style="object-fit: cover;" alt="bowl">
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Div attempt end -->
+  
         <div class="container">
             <div class="row">
-                <div class="col-md p-0 m-2">
+                <div class="col-md p-0 m-2 view overlay">
                         <img src="../img/salad.jpg" class="img-fluid h-100" style="object-fit: cover;" alt="salad">
                 </div>
                 <div class="col-md p-0 m-2">
                         <img src="../img/spaghetti.jpg" class="img-fluid h-100 img-resize" style="object-fit: cover;" alt="spaghetti">
-                </div>
+                  </div>
                 <div class="col-md p-0 m-2">
                         <img src="../img/bowl.jpeg" class="img-fluid h-100" style="object-fit: cover;" alt="bowl">
                 </div>
