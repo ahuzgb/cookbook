@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Surprise me!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="surprise.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="surprise.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+</head>
+
+<body>
+    <nav></nav>
+    
+    <div id="sep">
+        <p>I feel lucky</p>
+    </div>    
+   
+    <div class="header">
+        <h1>Can't decide<br>what to cook?</h1>
+    </div>
+
+    <div class="sep-gray">
+        <p>We know it's hard to decide on one of our mouth-watering recipes. But don't worry we've got you covered! Just choose which meal you want to prepare and whether you want a vegetarian or non-vegetarian recipe and we will surprise you with an easy, quick and delicious cooking idea! </p>
+    </div>
+
+    <form>
+
+        <div class="meal-button">
+
+            <div class="breakfast-button">
+                <input type="radio" name="meal" id="breakfast-button" value="breakfast" />
+                <label for="breakfast-button"></label>
+                <div class="button-labels-meal"><p>Breakfast</p></div>             
+            </div>
+            
+            <div class="lunch-button">
+                <input type="radio" name="meal" id="lunch-button" value="lunch" />
+                <label for="lunch-button"></label>
+                <div class="button-labels-meal"><p>Lunch</p></div>   
+            </div>
+
+            <div class="dinner-button">
+                <input type="radio" name="meal" id="dinner-button" value="dinner" />
+                <label for="dinner-button"></label>
+                <div class="button-labels-meal"><p>Dinner</p></div>   
+            </div>
+            
+        </div>
+        <hr>
+        <div class="vege-button">
+            
+            <div class="vege-yes">
+                <input type="radio" name="vege" id="vege-yes" value="vegetarian" />
+                <label for="vege-yes"></label>
+                <div class="button-labels-vege"><p>Vegetarian</p></div>   
+            </div>
+
+            <div class="vege-no">
+                <input type="radio" name="vege" id="vege-no" value="non-vegetarian" />
+                <label for="vege-no"></label>
+                <div class="button-labels-vege"><p>Non-vegetarian</p></div>   
+            </div>
+
+        </div>
+        
+        <div class="submit">
+            <input type="button" onclick ="surprise()" value ="Surprise me!">
+        </div>
+        
+        <div class="popup" onclick="error()">
+            <span class="popuptext" id="myPopup">Choose your options</span>
+        </div>
+    
+    </form>
+
+    
+</body>
+
+</html>
