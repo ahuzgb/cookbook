@@ -10,8 +10,15 @@ body {
 
 header p {
   font-size: 1.3em;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
+}
+
+hr {
+  border-top: 3px dotted #393e46;
+  background-color: white;
+  margin: 0 auto;
+  width: 5%;
 }
 
 .overlay-img {
