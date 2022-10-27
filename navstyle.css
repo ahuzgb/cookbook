@@ -2,17 +2,18 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
-  padding: 0.8rem;
+  padding: 1rem;
 }
 
 #logo {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-left: 2%;
 }
 
 h1 {
@@ -20,12 +21,16 @@ h1 {
   color: rgb(0, 0, 0);
   padding-bottom: 5px;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2.4em;
 }
 
-p {
+#logo > p {
   color: black;
-  font-family: "Alegreya SC", serif;git 
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  height: auto;
+  padding-bottom: 2em;
 }
 
 li {
@@ -40,4 +45,42 @@ li {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  margin-right: 5%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+  padding: 0.3em;
+  border-radius: 10%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .nav {
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+
+  .list {
+    margin-right: 0;
+  }
+
+  #logo {
+    padding-bottom: 1rem;
+  }
+
+  #no-padding {
+    margin-left: 0;
+  }
 }
