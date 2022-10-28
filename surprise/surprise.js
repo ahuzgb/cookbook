@@ -88,7 +88,7 @@ const surprise = () => {
     } else if ((document.getElementById('breakfast-button').checked) && (document.getElementById('vege-no').checked)) {
         breakNv();
     } else if ((document.getElementById('lunch-button').checked) && (document.getElementById('vege-yes').checked)) {
-        lunchNv();
+        lunchVege();
     } else if ((document.getElementById('lunch-button').checked) && (document.getElementById('vege-no').checked)) {
         lunchNv();
     } else if ((document.getElementById('dinner-button').checked) && (document.getElementById('vege-yes').checked)) {
@@ -98,4 +98,4 @@ const surprise = () => {
     } else {
         error();
     }
-}
+} 

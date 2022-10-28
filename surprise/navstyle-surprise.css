@@ -1,0 +1,90 @@
+.nav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  #logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 2%;
+  }
+  
+  nav h1 {
+    font-family: "Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  
+  #logo > p {
+    color: black;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    height: auto;
+    padding-bottom: 0.8em;
+
+  }
+  
+  li {
+    list-style-type: none;
+    margin-left: 3%;
+    margin-top: 1.3em;
+  }
+  
+  .list {
+    display: flex;
+    color: rgb(0, 0, 0);
+    padding-right: 0px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    margin-right: 5%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  a:link,
+  a:active,
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: black;
+    padding: 0.3em;
+    border-radius: 10%;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav {
+      flex-direction: column;
+      margin-bottom: 1em;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .list {
+      margin: 0px;
+    }
+  
+    #logo {
+      padding-bottom: 1rem;
+    }
+  
+    #no-padding {
+      margin-left: 0;
+    }
+  }
