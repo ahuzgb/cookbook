@@ -82,6 +82,11 @@ a:hover {
 
   .list {
     margin-right: 0;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
   }
 
   #logo {
@@ -89,6 +94,6 @@ a:hover {
   }
 
   #no-padding {
-    margin-left: 0;
+    margin-left: none;
   }
 }
