@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Surprise me!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="surprise.css">
+  <link rel="stylesheet" href="navstyle-surprise.css"/>
+  <link rel="stylesheet" href="footstyle-surprise.css"/>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="surprise.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div id="logo">
+          <p>the</p>
+          <h1>Busy Boot-camp Cookbook</h1>
+        </div>
+          <ul class="list">
+            <li id="no-padding"><a href="index.html">HOME</a></li>
+            <li><a href="/meals/breakfast.html">BREAKFAST</a></li>
+            <li><a href="/meals/lunch.html">LUNCH</a></li>
+            <li><a href="/meals/dinner.html">DINNER</a></li>
+            <li><a href="/meals/surprise.html">SURPRISE</a></li>
+          </ul>
+        </nav>
+    
+    <div id="sep">
+        <p>I feel lucky</p>
+    </div>    
+   
+    <div class="header">
+        <h1>Can't decide<br>what to cook?</h1>
+    </div>
+
+    <div class="sep-gray">
+        <p>We know it's hard to decide on one of our mouth-watering recipes. But don't worry we've got you covered! Just choose which meal you want to prepare and whether you want a vegetarian or non-vegetarian recipe and we will surprise you with an easy, quick and delicious cooking idea! </p>
+    </div>
+
+    <form>
+
+        <div class="meal-button">
+
+            <div class="breakfast-button">
+                <input type="radio" name="meal" id="breakfast-button" value="breakfast" />
+                <label for="breakfast-button"></label>
+                <div class="button-labels-meal"><p>Breakfast</p></div>             
+            </div>
+            
+            <div class="lunch-button">
+                <input type="radio" name="meal" id="lunch-button" value="lunch" />
+                <label for="lunch-button"></label>
+                <div class="button-labels-meal"><p>Lunch</p></div>   
+            </div>
+
+            <div class="dinner-button">
+                <input type="radio" name="meal" id="dinner-button" value="dinner" />
+                <label for="dinner-button"></label>
+                <div class="button-labels-meal"><p>Dinner</p></div>   
+            </div>
+            
+        </div>
+        <hr>
+        <div class="vege-button">
+            
+            <div class="vege-yes">
+                <input type="radio" name="vege" id="vege-yes" value="vegetarian" />
+                <label for="vege-yes"></label>
+                <div class="button-labels-vege"><p>Vegetarian</p></div>   
+            </div>
+
+            <div class="vege-no">
+                <input type="radio" name="vege" id="vege-no" value="non-vegetarian" />
+                <label for="vege-no"></label>
+                <div class="button-labels-vege"><p>Non-vegetarian</p></div>   
+            </div>
+
+        </div>
+        
+        <div class="submit">
+            <input type="button" onclick ="surprise()" value ="Surprise me!">
+        </div>
+        
+        <div class="popup" onclick="error()">
+            <span class="popuptext" id="myPopup">Choose your options</span>
+        </div>
+    
+    </form>
+
+    <footer>
+
+
+        <div class="title2"><h2 class="thee"><small>&copythe </small></h2>
+        
+          <h1 class="tile"><i>BUSY BOOT-CAMP COOKBOOK<small>2022</small></i></h1>
+        
+        </div>
+               
+        
+        
+                <div class="lista">
+                  <ul class="listb">
+                    <a href="index.html"><li>HOME</li> </a>
+                    <a href="/meals/breakfast.html"><li>BREAKFAST</li></a>
+                    
+                    <a href="/meals/lunch.html"><li>LUNCH</li></a>
+                    <a href="/meals/dinner.html"><li>DINNER</li></a>
+                    <a href="/meals/surprise.html"><li>SURPRISE</li></a>
+                  </ul>
+                </div>
+        
+        
+        <div class="logos">
+        
+        
+          <img src="../img/instagram.png" class="logo2">
+          <div></div>
+          <img src="../img/twitter.png" class="logo1">
+          <div></div>
+          <img src="../img/facebook.png" class="logo3">
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        </footer>
+    
+</body>
+
+</html>

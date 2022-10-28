@@ -1,0 +1,404 @@
+.nav {
+    height: 30px;
+}
+
+#sep {
+    background-color: lightgoldenrodyellow;
+    height: 20px;
+}
+
+#sep p {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-weight: 850;
+}
+
+.header {
+    margin: 50px auto;
+    background-image: url("../img/surprise-header.jpg");
+    background-size: auto;
+    background-position: right;
+    height: 400px;
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header h1 {
+    font-family: Alegreya, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.sep-gray {
+    height: 150px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sep-gray p {
+    font-family: Alegreya, serif;
+    background-color: white;
+    width: 55%;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.meal-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.button-labels-meal {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 1em;
+    font-family: Roboto, sans-serif;
+    margin-top: -50px;
+}
+
+.button-labels-meal p {
+    background-color: white;
+}
+
+.breakfast-button input[type="radio"]{
+    display:none;
+ }
+
+ 
+ .breakfast-button input[type="radio"] + label
+ {
+     background-image: url(../img/porridge.jpeg);
+     filter: grayscale(100%);
+     background-position: center;
+     background-size: 280px;
+     height: 200px;
+     width: 252px;
+     display:inline-block;
+     padding: 0 0 0 0px;
+     cursor:pointer;
+     border-radius: 10px;
+     z-index: 1;
+     position: relative;
+ }
+
+ .breakfast-button input[type="radio"]:checked + label
+ {
+     background-image: url(../img/porridge.jpeg);
+     filter: grayscale(0%);
+ }
+
+
+ .lunch-button input[type="radio"]{
+    display:none;
+ }
+
+ 
+ .lunch-button input[type="radio"] + label
+ {
+     background-image: url(../img/frittata.png);
+     filter: grayscale(100%);
+     background-position: center;
+     background-size: auto 252px;
+     height: 200px;
+     width: 252px;
+     display:inline-block;
+     padding: 0 0 0 0px;
+     cursor:pointer;
+     border-radius: 10px;
+ }
+ 
+ .lunch-button input[type="radio"]:checked + label
+ {
+     background-image: url(../img/frittata.png);
+     filter: grayscale(0%);
+ }
+
+ .dinner-button input[type="radio"]{
+    display:none;
+ }
+
+ 
+ .dinner-button input[type="radio"] + label
+ {
+     background-image: url(../img/steak2.jpeg);
+     filter: grayscale(100%);
+     background-size: 300px;
+     background-position: center;
+     height: 200px;
+     width: 252px;
+     display:inline-block;
+     padding: 0 0 0 0px;
+     cursor:pointer;
+     border-radius: 10px;
+ }
+ 
+ .dinner-button input[type="radio"]:checked + label
+ {
+     background-image: url(../img/steak2.jpeg);
+     filter: grayscale(0%);
+ }
+
+ hr {
+    width: 150px;
+    border: 1px dotted transparent;
+    margin-top: 0px;
+ }
+
+ .button-labels-vege {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    text-align: center;
+    cursor:pointer;
+    font-size: 1em;
+    width: auto;
+    font-family: Roboto, sans-serif;
+    margin-top: -50px;
+}
+
+.vege-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 50px;
+}
+
+
+ .vege-yes input[type="radio"]{
+    display:none;
+ }
+ 
+ .vege-yes input[type="radio"] + label
+ {
+     background-image: url(../img/vege.jpg);
+     filter: grayscale(100%);
+     background-size: 389px;
+     height: 200px;
+     width: 389px;
+     display:inline-block;
+     padding: 0 0 0 0px;
+     cursor:pointer;
+     border-radius: 10px;
+ }
+ 
+ .vege-yes input[type="radio"]:checked + label
+ {
+     background-image: url(../img/vege.jpg);
+     filter: grayscale(0%);
+ }
+
+ .vege-no input[type="radio"]{
+    display:none;
+ }
+
+ 
+ .vege-no input[type="radio"] + label
+ {
+     background-image: url(../img/nonvege.jpg);
+     filter: grayscale(100%);
+     background-size: 389px;
+     height: 200px;
+     width: 389px;
+     display:inline-block;
+     padding: 0 0 0 0px;
+     cursor:pointer;
+     border-radius: 10px;
+ }
+ 
+ .vege-no input[type="radio"]:checked + label
+ {
+     background-image: url(../img/nonvege.jpg);
+     filter: grayscale(0%);
+ }
+
+
+
+.submit {
+    height: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.submit input {
+    font-family: Alegreya, serif;
+    background-color: white;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    cursor:pointer;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px lightgray;
+    color: #404040;
+}
+
+
+@media only screen and (min-width: 1333px) and (max-width: 1600px) {
+    .header {
+        width: 70%;
+        border-radius: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1333px) {
+    .header {
+        width: 90%;
+        border-radius: 30px;
+    }
+
+    .sep-gray {
+        height: auto;
+        min-height: 150px;
+    }
+
+    .sep-gray p {
+        width: 90%;
+        margin: 20px 0px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 880px) {
+    .header {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .sep-gray {
+        height: auto;
+
+        min-height: 150px;
+    }
+
+    .sep-gray p {
+        width: 90%;
+        margin: 20px 0px;
+    }
+
+    .meal-button {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vege-button {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+    }
+
+    .breakfast-button input[type="radio"] + label {
+        width: 389px;
+        background-size: 389px;
+        background-position: center;
+    }
+
+    .lunch-button input[type="radio"] + label {
+        width: 389px;
+        background-size: 389px;
+    }
+
+    .dinner-button input[type="radio"] + label {
+        width: 389px;
+        background-size: 389px;
+    }
+
+    hr {
+        width: 150px;
+        border-top: 3px dotted lightgray;
+        margin-top: 40px;
+     }
+    
+}
+
+
+.popup {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: -160px;
+    margin-left: 150px;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightgoldenrodyellow transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    /* -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s */
+  }
+  
+  /* Add animation (fade in the popup)
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
