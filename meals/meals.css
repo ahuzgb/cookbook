@@ -290,6 +290,7 @@ h6 {
   .tile {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 0;
   }
 
   footer {
