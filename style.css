@@ -118,16 +118,20 @@ footer {
   align-items: center;
 }
 
+.title2 {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
 .tile {
   color: rgb(0, 0, 0);
   font-size: 19px;
-  flex-direction: column;
-
-  display: flex;
   font-family: "Alegreya SC", serif;
   padding-top: 10px;
+
   width: 88%;
-  align-items: flex-start;
+  margin-left: 2%;
 }
 
 .copy {
@@ -164,6 +168,7 @@ footer {
   justify-content: flex-end;
   padding-right: 60px;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 li {
@@ -173,7 +178,104 @@ li {
 .listb {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 5%;
+  flex-wrap: nowrap;
+}
+
+.listb a {
+  color: black;
+  text-decoration: none;
+}
+
+.listb a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 1px;
+}
+
+.phone {
+  width: 700px;
+  height: 390px;
+
+  border-radius: 0px;
+}
+
+.bottom {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.parent {
+  width: 100%;
+  padding-left: 200px;
+}
+
+.ftext {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 60px;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-family: "Alegreya SC", serif;
+  font-size: 38px;
+  padding-left: 55px;
+  align-items: center;
+  display: flex;
+  background-color: lightgray;
+  height: 100px;
+  width: 640px;
+  border-radius: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  footer {
+    height: auto;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .listb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+  }
+
+  .logos {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    margin-left: -5%;
+    gap: 10px;
+  }
 }
 
 .phone {
@@ -216,8 +318,18 @@ h6 {
 }
 
 @media only screen and (max-width: 880px) {
-  .row {
+  .row,
+  .bottom,
+  .parent {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .ftext {
+    justify-content: center;
   }
 }
